@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Clubberland - Homepage</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/custom.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+
+
+
+<body>
+<!-------  Navigation   --------->
+    <div class="top_navigation  blue-grey darken-2">
+        <div class="container">
+            <div class="row">
+                <div class="col s6">
+                    <span class="white-text">Nightlife portal for clubbing people</span>
+                </div>
+                <div class="col s6">
+                    <ul class="top_navigation_list right">
+                        <li><a href="#" class="text_underline">New York</a></li>
+                        <li><a href="#">Are you a member?</a></li>
+                        <li><a href="#">Register</a> / <a href="#">Login</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav class="blue-grey darken-3" role="navigation" style="box-shadow: none;">
+        <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Clubberland</a>
+
+            <!--<ul class="left hide-on-med-and-down home_navigation">-->
+                <!--<li>-->
+                    <!--<form>-->
+                        <!--<div class="input-field">-->
+                            <!--<input id="search" type="search" required>-->
+                            <!--<label for="search"><i class="material-icons">search</i></label>-->
+                            <!--<i class="material-icons">close</i>-->
+                        <!--</div>-->
+                    <!--</form>-->
+                <!--</li>-->
+            <!--</ul>-->
+            <ul class="right hide-on-med-and-down home_navigation">
+                <li><a href="#" id="home_link">Home</a></li>
+                <li><a href="#" id="events_link">Events</a></li>
+                <li><a href="#" id="venues_link">Venues</a></li>
+                <li><a href="#" id="cl_map_link">CL-Map</a></li>
+                <li>
+                    <div class="nav-search right">
+                    <a href="#" onclick="return false;"><i class="mdi-action-search"></i></a>
+                    <div class="material-search-overlay circle material-search-overlay-color-bg material-search-overlay-hidden"></div>
+                        <form class="material-search-form material-search-form-hidden" action="//emerald.sekizgen.net" autocomplete="off">
+                            <div class="material-search-form-container">
+                                <a href="#" onclick="return false;" class="material-search-close"><i class="mdi-navigation-close"></i></a>
+                                <div class="material-search-form-container-row">
+                                    <div class="material-search-label center-align">
+                                        <label for="s">Type Anything &amp; Press 'Enter'</label>
+                                    </div>
+                                    <div class="material-search-input">
+                                        <input type="text" id="s" name="s" class="flow-text" autofocus="">
+                                        <span class="input-bottom-bar"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </li>
+            </ul>
+            <ul id="nav-mobile" class="side-nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Venues</a></li>
+                <li><a href="#">CL-Map</a></li>
+            </ul>
+            <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+        </div>
+    </nav>
+<!------- end Navigation --------->
+
+<!------- Main Content wrapper --------->
+  <div class="container">
+    <div class="section">
+      <div class="col s6">
+        <h2>Navigation Themes Ver 00</h2>
+          <ul>
+              <li><a href="/">Version 0</a></li>
+              <li><a href="navigation-ver-01.html">Version 1</a></li>
+              <li><a href="navigation-ver-02.html">Version 2</a></li>
+              <li><a href="navigation-ver-03.html">Version 3</a></li>
+          </ul>
+        <p>Removing Roboto Removing Roboto Removing Roboto Removing Roboto Removing Roboto Removing Roboto Removing Roboto Removing Roboto</p>
+
+      </div>
+      <!--   Icon Section   -->
+      <div class="row">
+
+      </div>
+
+    </div>
+
+  </div>
+<!------- end Main Content wrapper --------->
+
+
+
+
+<footer class="page-footer orange">
+
+</footer>
+
+
+  <!--  Scripts-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="js/bin/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  </body>
+</html>
+<script>
+    $( document ).ready(function() {
+
+
+        $("ul li a").click( function(event)
+        {
+            var element_id = this.id;
+
+            if(element_id == 'home_link'){
+
+            }
+            switch (element_id){
+
+                case 'home_link':
+                    $('ul.home_navigation li').removeClass('active').css('background-color', '#37474f');
+                    $('ul.home_navigation li').removeClass('active');
+                    $(this).closest('li').addClass('active').css('background-color', 'rgba(69, 90, 100, 1)');
+                    $('.top_navigation').removeClass('blue-grey darken-2').css('background-color', 'rgba(69, 90, 100, 1)');
+                    break;
+                case 'events_link':
+                    $('ul.home_navigation li').removeClass('active').css('background-color', '#37474f');
+                    $('ul.home_navigation li').removeClass('active');
+                    $(this).closest('li').addClass('active').css('background-color', '#1565c0');
+                    $('.top_navigation').removeClass('blue-grey darken-2').css('background-color', '#1565c0');
+                    break;
+                case 'venues_link':
+                    $('ul.home_navigation li').removeClass('active').css('background-color', '#37474f');
+                    $('ul.home_navigation li').removeClass('active');
+                    $(this).closest('li').addClass('active').css('background-color', '#4527a0');
+                    $('.top_navigation').removeClass('blue-grey darken-2').css('background-color', '#4527a0');
+                    break;
+                case 'cl_map_link':
+                    $('ul.home_navigation li').removeClass('active').css('background-color', '#37474f');
+                    $(this).closest('li').addClass('active').css('background-color', '#00796b');
+                    $('.top_navigation').removeClass('blue-grey darken-2').css('background-color', '#00796b');
+                    break;
+
+            }
+
+        });
+
+    });
+</script>

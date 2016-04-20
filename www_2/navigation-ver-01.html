@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Clubberland - Homepage</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/custom.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+
+
+
+<body>
+<style>
+    /*nav ul a, nav .brand-logo {*/
+
+        /*color: rgba(0, 0, 0, 0.87);*/
+    /*}*/
+    .nice_1 {background-color: #ee6e73;}
+    .nice_11 {background-color: #EA8A8D;}
+    .nice_2 {background-color: #455A64;}
+    .search {background-color: #61737B}
+    .nice_3 {background-color: #0395D7;}
+    .nice_4 {background-color: #24A1D9;}
+    .green_dark { background-color: #00796B}
+    .green_light { background-color: #02A08E}/*  3CBC8D  */
+
+</style>
+<!-------  Navigation   --------->
+    <div class="top_navigation">
+        <div class="container">
+            <div class="row">
+                <div class="col s6">
+                    <span class="white-text">Nightlife portal for clubbing people</span>
+                </div>
+                <div class="col s6">
+                    <ul class="top_navigation_list right">
+                        <li><a href="#" class="text_underline">New York</a></li>
+                        <li><a href="#">Are you a member?</a></li>
+                        <li><a href="#"><a href="#">Register</a> / <a href="#">Login</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav class="navigation_wrapper" role="navigation" style="box-shadow: none; ">
+        <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Clubberland</a>
+            <ul class="right hide-on-med-and-down home_navigation">
+                <li><a href="#" id="home_link">Home</a></li>
+                <li><a href="#" id="events_link">Events</a></li>
+                <li><a href="#" id="venues_link">Venues</a></li>
+                <li><a href="#" id="cl_map_link">CL-Map</a></li>
+            </ul>
+            <ul id="nav-mobile" class="side-nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Venues</a></li>
+                <li><a href="#">CL-Map</a></li>
+            </ul>
+            <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+        </div>
+    </nav>
+<!------- end Navigation --------->
+
+<!------- Main Content wrapper --------->
+  <div class="container">
+    <div class="section">
+      <div class="col s6">
+          <h2>Navigation Themes Ver 01</h2>
+          <ul>
+              <li><a href="/">Version 0</a></li>
+              <li><a href="navigation-ver-01.html">Version 1</a></li>
+              <li><a href="navigation-ver-02.html">Version 2</a></li>
+              <li><a href="navigation-ver-03.html">Version 3</a></li>
+          </ul>
+        <p>Removing Roboto Removing Roboto Removing Roboto Removing Roboto Removing Roboto Removing Roboto Removing Roboto Removing Roboto</p>
+
+      </div>
+      <!--   Icon Section   -->
+      <div class="row">
+
+      </div>
+
+    </div>
+
+  </div>
+<!------- end Main Content wrapper --------->
+
+
+
+
+<footer class="page-footer orange">
+
+</footer>
+
+
+  <!--  Scripts-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="js/bin/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  </body>
+</html>
+<script>
+    $( document ).ready(function() {
+
+$('.top_navigation').css('background-color', '#ee6e73');
+$('.navigation_wrapper').css('background-color', '#EA8A8D');
+$('#home_link').closest('li').addClass('active').css('background-color', '#ee6e73');
+
+        $("ul li a").click( function(event)
+        {
+            var element_id = this.id;
+
+            if(element_id == 'home_link'){
+
+            }
+            switch (element_id){
+
+//                case 'home_link':
+//                    $('ul.home_navigation li').removeClass('active').css('background-color', '#EA8A8D');
+//                    //$('ul.home_navigation li').removeClass('active');
+//                    $(this).closest('li').addClass('active').css('background-color', '#ee6e73');
+//                    $('.top_navigation').removeClass('nice_1').css('background-color', '#ee6e73');
+//                    $('.navigation_wrapper').removeClass('nice_4 search').addClass('nice_1');
+//                    break;
+//                case 'events_link':
+//                    $('ul.home_navigation li').removeClass('active').css('background-color', '#24A1D9');
+//                    //$('ul.home_navigation li').removeClass('active');
+//                    $(this).closest('li').addClass('active').css('background-color', '#0395D7');
+//                    $('.top_navigation').removeClass('nice_1').css('background-color', '#0395D7');
+//                    $('.navigation_wrapper').removeClass('nice_1').addClass('nice_4');
+//                    break;
+//                case 'venues_link':
+//                    $('ul.home_navigation li').removeClass('active').css('background-color', '#61737B');
+//                    $(this).closest('li').addClass('active').css('background-color', '#455A64');
+//                    $('.top_navigation').removeClass('nice_1').css('background-color', '#455A64');
+//                    $('.navigation_wrapper').removeClass('nice_4').addClass('search');
+//                    break;
+//                case 'cl_map_link':
+//                    $('ul.home_navigation li').removeClass('active').css('background-color', '#02A08E');
+//                    $(this).closest('li').addClass('active').css('background-color', '#00796b');
+//                    $('.top_navigation').removeClass('nice_1').css('background-color', '#00796b');
+//                    $('.navigation_wrapper').removeClass('nice_4').addClass('green_light');
+//                    break;
+
+
+                case 'home_link':
+                    $('ul.home_navigation li').removeClass('active').css('background-color', '#EA8A8D');
+                    $(this).closest('li').addClass('active').css('background-color', '#ee6e73');
+                    $('.top_navigation').css('background-color', '#ee6e73');
+                    $('.navigation_wrapper').css('background-color', '#EA8A8D');
+                    break;
+                case 'events_link':
+                    $('ul.home_navigation li').removeClass('active').css('background-color', '#24A1D9');
+                    $(this).closest('li').addClass('active').css('background-color', '#0395D7');
+                    $('.top_navigation').css('background-color', '#0395D7');
+                    $('.navigation_wrapper').css('background-color', '#24A1D9');
+                    break;
+                case 'venues_link':
+                    $('ul.home_navigation li').removeClass('active').css('background-color', '#61737B');
+                    $(this).closest('li').addClass('active').css('background-color', '#455A64');
+                    $('.top_navigation').css('background-color', '#455A64');
+                    $('.navigation_wrapper').css('background-color', '#61737B');
+                    break;
+                case 'cl_map_link':
+                    $('ul.home_navigation li').removeClass('active').css('background-color', '#02A08E');
+                    $(this).closest('li').addClass('active').css('background-color', '#00796b');
+                    $('.top_navigation').css('background-color', '#00796b');
+                    $('.navigation_wrapper').css('background-color', '#02A08E');
+                    break;
+
+            }
+
+        });
+
+    });
+</script>
